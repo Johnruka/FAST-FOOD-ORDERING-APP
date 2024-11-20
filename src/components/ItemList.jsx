@@ -1,38 +1,38 @@
 import React, { useEffect, useState } from "react";
 
-const Item = () => {
+const ItemList = () => {
   const items = [
     {
-      id: 1,
+      
       image: "https://via.placeholder.com/150",
-      title: "Ad 1",
-      description: "This is the first item.",
-      contact: "Contact1@test.com",
+      title: "Burger",
+      description: "A delicious burger with all the fixings",
+      price: "Sek 79.99",
     },
     {
-      id: 2,
+      
       image: "https://via.placeholder.com/150",
-      title: "Ad 2",
-      description: "This is the second item.",
-      contact: "Contact2@test.com",
+      title: "Pizza",
+      description: "Classic Pizza with your favorite toppings",
+      price: "Sek 99.99",
     },
     {
-      id: 3,
+      
       image: "https://via.placeholder.com/150",
-      title: "Ad 3",
-      description: "This is the third item.",
-      contact: "Contact3@test.com",
+      title: "Fries",
+      description: "Crispy golden fries served hot and fresh",
+      price: "Sek 99.99",
     },
 ];
 
-const [visibleContact, setVisibleContact] = useState(
+const [adItem, setadItem] = useState(
   items.reduce((acc, ad) => {
     acc[ad.id] = false;
     return acc;
   }, {})
 );
-const handleToggleContact = (id) => {
-  setVisibleContact((prevState) => ({
+const handleToggleadItem = (id) => {
+  setadItem((prevState) => ({
     ...prevState,
     [id]: !prevState[id],
   }));
@@ -76,10 +76,7 @@ return (
             <img src={ad.image} style={{ width: "100%", height: "auto" }} />
             <h3>{ad.title}</h3>
             <p>{ad.description}</p>
-            <p>
-              <strong>Contact: </strong>
-              {visibleContact[ad.id] ? ad.contact : "***"}
-            </p>
+            <p>{ad.price}</p>
             <div
               style={{
                 display: "flex",
@@ -88,7 +85,7 @@ return (
               }}
             >
               <button
-                onClick={() => handleToggleContact(ad.id)}
+                onClick={() => handleToggAdItem(ad.id)}
                 style={{
                   marginTop: "10px",
                   padding: "8px 12px",
@@ -98,7 +95,7 @@ return (
                   color: "#333",
                 }}
               >
-                {visibleContact[ad.id] ? "Hide Details" : "Show Details"}
+                {adItem[ad.id] ? "adItem": adItem}
               </button>
             </div>
           </div>
