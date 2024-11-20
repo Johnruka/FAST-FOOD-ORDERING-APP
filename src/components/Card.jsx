@@ -9,7 +9,7 @@ const Card = ({
   cardStyle,
 }) => {
   return (
-    <div className={`card ${cardStyle}`} style={{ width: "400px" }}>
+    <div className={`card ${cardStyle}`} style={{ width: "350px" }}>
       <div className="card-header">
         <img src={image} className="card-img-top" title={title} />
       </div>
