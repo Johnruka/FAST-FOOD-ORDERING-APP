@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import ItemList from './components/ItemList'
+import ItemList from './components/Menu'
 
 
 const App = () => {
   return (
     <div>
       
-      <ItemList />
+      <Menu />
       
       
     </div>

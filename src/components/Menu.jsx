@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ItemList = () => {
+const Menu = () => {
   const items = [
     {
       
@@ -85,7 +85,7 @@ return (
               }}
             >
               <button
-                onClick={() => handleToggAdItem(ad.id)}
+                onClick={() => handleToggleadItem(ad.id)}
                 style={{
                   marginTop: "10px",
                   padding: "8px 12px",
@@ -108,4 +108,4 @@ return (
 );
 };
 
-export default ItemList;
+export default Menu;
