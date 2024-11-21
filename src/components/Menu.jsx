@@ -35,7 +35,7 @@ const Menu = ({ addToOrder }) => {
               description={item.description}
               price={item.price}
               cardStyle=""
-              buttonAction={() => addToOrder(item)} blue
+              buttonAction={() => addToOrder(item)} 
             />
           </div>
         ))}
