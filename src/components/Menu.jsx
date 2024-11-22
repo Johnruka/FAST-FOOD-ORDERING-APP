@@ -8,6 +8,7 @@ const Menu = ({ addToOrder }) => {
       title: "Burger",
       description: "A delicious burger with all the fixings.",
       price: 79.99,
+    
     },
     {
       image: "https://via.placeholder.com/350",
