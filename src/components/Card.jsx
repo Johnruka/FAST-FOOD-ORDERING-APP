@@ -9,9 +9,9 @@ const Card = ({
   cardStyle,
 }) => {
   return (
-    <div className={`card ${cardStyle}`} style={{ width: "350px" }}>
-      <div className="card-header">
-        <img src={image} className="card-img-top" title={title} />
+    <div className={`card ${cardStyle}`} style={{ width: "350px"}}>
+    <div className="card-header">
+      <img src={image} style={{ height: "250px "}} className="card-img-top" title={title} />
       </div>
       <div className="card-body">
         <h5 className="card-title">{title}</h5>

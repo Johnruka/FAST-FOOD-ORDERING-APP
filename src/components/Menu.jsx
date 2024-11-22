@@ -4,20 +4,20 @@ import Card from "./Card";
 const Menu = ({ addToOrder }) => {
   const menuItems = [
     {
-      image: "https://via.placeholder.com/350" ,
+      image: "src\\assets\\burger.jpg"   ,
       title: "Burger",
       description: "A delicious burger with all the fixings.",
       price: 79.99,
     
     },
     {
-      image: "https://via.placeholder.com/350",
+      image: "src\\assets\\Pizza.jpg",
       title: "Pizza",
       description: "A delicious burger with all the fixings.",
       price: 99.99,
     },
     {
-      image: "https://via.placeholder.com/350",
+      image: "src\\assets\\fries.jpg",
       title: "Fries",
       description: "A delicious burger with all the fixings.",
       price: 59.99,
