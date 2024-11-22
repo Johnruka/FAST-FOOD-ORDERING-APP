@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Menu from "./components/Menu";
-import OrderList from "./components/OrderList";
+import Menu from "./Components/Menu";
+import OrderList from "./Components/OrderList";
+import ThemeToggle from "./Components/ThemeToggle";
 import './App.css'
 
 const App = () => {
@@ -32,10 +33,11 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="container">
+      <ThemeToggle />
       <Menu addToOrder={addToOrder} />
       <OrderList order={order} updateQuantity={updateQuantity} />
-    </>
+    </div>
   );
 };
 
