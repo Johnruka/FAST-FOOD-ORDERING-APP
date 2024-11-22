@@ -4,7 +4,7 @@ import Card from "./Card";
 const Menu = ({ addToOrder }) => {
   const menuItems = [
     {
-      image: "https://via.placeholder.com/350",
+      image: "https://via.placeholder.com/350" ,
       title: "Burger",
       description: "A delicious burger with all the fixings.",
       price: 79.99,
