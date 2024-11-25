@@ -45,7 +45,7 @@ const OrderList = ({ order, updateQuantity }) => {
           className="list-group-item d-flex justify-content-end"
           style={{ color: "blue" }}
         >
-          {total.toFixed(2)} SEK
+          {(total).toFixed(2)} SEK
         </li>
       </ul>
     </div>
